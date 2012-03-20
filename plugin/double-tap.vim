@@ -56,10 +56,10 @@ function! s:Detect_empty_comment()
 endfunction
 
 if !hasmapto('<Plug>DoubletapDetect')
-  inoremap <unique> <CR> <Plug>DoubletapDetect
+  imap <unique> <CR> <Plug>DoubletapDetect
 endif
 
-inoremap <expr> <Plug>DoubletapDetect <SID>Detect_empty_comment()
+imap <expr> <Plug>DoubletapDetect <SID>Detect_empty_comment()
 
 " Teardown:{{{1
 "reset &cpo back to users setting
